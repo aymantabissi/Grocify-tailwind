@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <nav class="container mx-auto p-6">
+        <div class="flex items-center justify-between  ">
+            <div>
+                <img src="/dist/images/logo.png" alt="" class="p-6 ml-3" width="180px">
+            </div>
+            <div class=" hidden md:flex  font-bold  space-x-8">
+                <a href="#" class="text-white  hover:text-orange-400">Home</a>
+                <a href="#"  class="text-white  hover:text-orange-400">About</a>
+                <a href="#"  class="text-white  hover:text-orange-400">Features</a>
+                <a href="#"  class="text-white  hover:text-orange-400">Contact</a>
+            </div>
+            <button id="mobile-btn" class="md:hidden bg-white">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+
+            <div class="md:hidden">
+                <div id="mobile-menu" class="absolute flex hidden flex-col items-center space-y-4 font-bold bg-gray-50 py-8 left-6 right-6 drop-shadow-lg border-gray-300 ">
+                <a href="#"> Home</a>
+                <a href="#"  >About</a>
+                <a href="#">Features</a>
+                <a href="#"  >Contact</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container mx-auto p-6 space-x-6 text-white flex flex:col-reverse md:flex-row">
+            <div class="md:1/2  flex flex-col  space-y-5 py-8 text-center md:text-left">
+                <h1 class="font-bold text-3xl  md:text-7xl  space-y-6">Groceries <br>
+                    delivery in 15 mins.</h1>
+                    <P class="text-1xl">
+                        Grocify offer a wide range of products, including fresh products, meats, <br> dairy, baked goods and non-perishable items.
+                    </P>
+                    <a href="#" class="py-1 px-6  text-white self-center md:self-start ease-in duration-300  bg-yellow-400 hover:bg-slate-900 border border-yellow-400 rounded-full " >Order now </a>
+            </div>
+            <div class="w-1/2">
+                <img src="/dist/images/grocery-image.png" alt="" width="550px">
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="./dist/js/Script.js"></script>
+</body>
+</html>
